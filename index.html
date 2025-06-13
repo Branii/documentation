@@ -53,7 +53,7 @@
 
           <!-- Logo -->
           <a class="logo ml-md-3" href="index.html">
-           <img src="assets/images/logo.png" width="40px" height="40px"/> 1kball
+            <img src="assets/images/logo.png" width="40px" height="40px" /> 1kball
           </a>
           <span class="text-2 ml-2">Lottery Game</span>
           <!-- Logo End -->
@@ -94,13 +94,13 @@
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#idocs_layout">Frontend UI</a>
-            <ul class="nav flex-column">
+            <!-- <ul class="nav flex-column">
               <li class="nav-item"><a class="nav-link" href="#idocs_header">Header</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_navbar">Navbar</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Sidebar</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_footer">Footer</a></li>
               <li class="nav-item"><a class="nav-link" href="#idocs_box_layout">Box Layout</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li class="nav-item"><a class="nav-link" href="#idocs_typography">Api Services</a>
             <ul class="nav flex-column">
@@ -213,285 +213,69 @@
           <!-- Layout
 		============================ -->
           <section id="idocs_layout">
-            <h2>Layout</h2>
-            <p class="lead mb-5">Documentation and examples for header, navbar, sidebar, footer</p>
-          </section>
+            <h2>Api-key</h2>
+            <p class="lead mb-5">To ensure secure access to our API, all requests must be authenticated using an API
+              Key.<br> This key uniquely identifies the client making the request and grants access to allowed
+              endpoints.<br>
+              Copy and paste your api-key into the perspective test box to make a request
+            </p>
 
-
-          <!-- Header
-		============================ -->
-          <section id="idocs_header">
-            <h2>Header</h2>
-            <p>The list of various header types & its descriptions are provided below for your reference:</p>
-
-            <h4>Light</h4>
-            <p>Header with white background Color & Dark text. <span class="text-info">See below image and code for more
-                information.</span></p>
-            <p><a class="popup-img" href="assets/images/header-light.jpg"><img class="img-fluid border"
-                  src="assets/images/header-light.jpg" alt=""></a></p>
-            <pre><code class="html">&lt;!-- Header
-============================ --&gt;
-&lt;header id=&quot;header&quot; class=&quot;sticky-top&quot;&gt; 
-  &lt;!-- Navbar --&gt;
-  &lt;nav class=&quot;primary-menu navbar navbar-expand-lg&quot;&gt;
-    &lt;div class=&quot;container-fluid&quot;&gt; 
-      .....
-    &lt;/div&gt;
-  &lt;/nav&gt;
-  &lt;!-- Navbar End --&gt; 
-&lt;/header&gt;
-&lt;!-- Header End --&gt;
-</code></pre>
-
-            <h4>Dark</h4>
-            <p>Header with dark background & Light text. <span class="text-info">See below image and code for more
-                information.</span></p>
-            <p><a class="popup-img" href="assets/images/header-dark.jpg"><img class="img-fluid border"
-                  src="assets/images/header-dark.jpg" alt=""></a></p>
-            <p>Add the <code>.bg-dark</code> and <code>.navbar-text-light</code> Class to the <code>&lt;nav&gt;</code>
-              Tag to display a Dark Header.</p>
-            <pre><code class="html">&lt;!-- Header
-============================ --&gt;
-&lt;header id=&quot;header&quot; class=&quot;sticky-top&quot;&gt; 
-  &lt;!-- Navbar --&gt;
-  &lt;nav class=&quot;primary-menu navbar navbar-expand-lg bg-dark navbar-text-light&quot;&gt;
-    &lt;div class=&quot;container-fluid&quot;&gt; 
-      .....
-    &lt;/div&gt;
-  &lt;/nav&gt;
-  &lt;!-- Navbar End --&gt; 
-&lt;/header&gt;
-&lt;!-- Header End --&gt;
-</code></pre>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Navbar
-		============================ -->
-          <section id="idocs_navbar">
-            <h2>Navbar</h2>
-            <p class="lead">Documentation and examples for powerful responsive navigation header</p>
-            <h4 class="mt-5">Left align</h4>
-            <p>Header with Navigation alligned Left. <span class="text-info">See below image and code for more
-                information.</span></p>
-            <p><a class="popup-img" href="assets/images/navbar-left.jpg"><img class="img-fluid border"
-                  src="assets/images/navbar-left.jpg" alt=""></a></p>
-            <p>Add the <code>.justify-content-left</code> class to the element of collapse to display a align left
-              navbar.</p>
-            <pre><code class="html">&lt;div id=&quot;header-nav&quot; class=&quot;collapse navbar-collapse justify-content-start&quot;&gt;
-  &lt;ul class=&quot;navbar-nav&quot;&gt;
-    .......
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-
-            <h4 class="mt-5">Right align</h4>
-            <p>Header with Navigation alligned Right. <span class="text-info">See below image and code for more
-                information.</span></p>
-            <p><a class="popup-img" href="assets/images/navbar-right.jpg"><img class="img-fluid border"
-                  src="assets/images/navbar-left.jpg" alt=""></a></p>
-            <p>Add the <code>.justify-content-end</code> class to the element of collapse to display a align right
-              navbar.</p>
-            <pre><code class="html">&lt;div id=&quot;header-nav&quot; class=&quot;collapse navbar-collapse justify-content-end&quot;&gt;
-  &lt;ul class=&quot;navbar-nav&quot;&gt;
-    .......
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-
-            <h4 class="mt-5">Center Align</h4>
-            <p>Header with Navigation alligned Center. <span class="text-info">See below image and code for more
-                information.</span></p>
-            <p><img class="img-fluid border" src="assets/images/navbar-center.jpg" alt=""></p>
-            <p>Add the <code>.justify-content-center</code> class to the element of collapse to display a align center
-              navbar.</p>
-            <pre><code class="html">&lt;div id=&quot;header-nav&quot; class=&quot;collapse navbar-collapse justify-content-center&quot;&gt;
-  &lt;ul class=&quot;navbar-nav&quot;&gt;
-    .......
-  &lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Sidebar
-		============================ -->
-          <section id="idocs_sidebar">
-            <h2>Sidebar</h2>
-            <p class="lead">We have built fixed sidebar navigation with <a target="_blank"
-                href="https://getbootstrap.com/docs/4.4/components/scrollspy/">bootstrap scrollspy</a> function for docs
-              layout. which is automatically update navigation based on scroll position to indicate which link is
-              currently active in the viewport.</p>
-            <p>The example below sidebar vertical navigation with bootstrap <a target="_blank"
-                href="https://getbootstrap.com/docs/4.4/components/navs/">navs</a> and <a target="_blank"
-                href="https://getbootstrap.com/docs/4.4/components/scrollspy/">scrollspy</a> components and section of
-              docs content.</p>
-            <pre class="pre-scrollable"><code class="html">&lt;!-- Sidebar Navigation
-============================ --&gt;
-&lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
-  &lt;ul class=&quot;nav flex-column &quot;&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link active&quot; href=&quot;#item_1&quot;&gt;Item 1&lt;/a&gt;
-      &lt;ul class=&quot;nav flex-column&quot;&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_1_1&quot;&gt;Sub Item 1.1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_1_2&quot;&gt;Sub Item 1.2&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2&quot;&gt;Item 2&lt;/a&gt;
-      &lt;ul class=&quot;nav flex-column&quot;&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2_1&quot;&gt;Sub Item 2.1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_2_2&quot;&gt;Sub Item 2.2&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_3&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#item_4&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;!-- Docs Content
-============================ --&gt;
-&lt;div class=&quot;idocs-content&quot;&gt;
-  &lt;div class=&quot;container&quot;&gt; 
-    
-    &lt;!-- Item 1 --&gt;
-    &lt;section id=&quot;item_1&quot;&gt;
-      &lt;h2&gt;Item 1&lt;/h2&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;hr class=&quot;divider&quot;&gt;
-    
-        &lt;!-- Item 1.1 --&gt;
-        &lt;section id=&quot;item_1_1&quot;&gt;
-          &lt;h2&gt;Item 1.1&lt;/h2&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;hr class=&quot;divider&quot;&gt;
-        
-        &lt;!-- Item 1.2 --&gt;
-        &lt;section id=&quot;item_1_2&quot;&gt;
-          &lt;h2&gt;Item 1.2&lt;/h2&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;hr class=&quot;divider&quot;&gt;
-    
-    &lt;!-- Item 2 --&gt;
-    &lt;section id=&quot;item_2&quot;&gt;
-      &lt;h2&gt;Item 2&lt;/h2&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;hr class=&quot;divider&quot;&gt;
-    
-        &lt;!-- Item 2.1 --&gt;
-        &lt;section id=&quot;item_2_1&quot;&gt;
-          &lt;h2&gt;Item 2.1&lt;/h2&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;hr class=&quot;divider&quot;&gt;
-        
-        &lt;!-- Item 2.2 --&gt;
-        &lt;section id=&quot;item_2_2&quot;&gt;
-          &lt;h2&gt;Item 2.2&lt;/h2&gt;
-          &lt;p&gt;...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;hr class=&quot;divider&quot;&gt;
-    
-    &lt;!-- Item 3 --&gt;
-    &lt;section id=&quot;item_3&quot;&gt;
-      &lt;h2&gt;Item 3&lt;/h2&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/section&gt;
-    &lt;hr class=&quot;divider&quot;&gt;
-    
-    &lt;!-- Item 4 --&gt;
-    &lt;section id=&quot;item_4&quot;&gt;
-      &lt;h2&gt;Item 4&lt;/h2&gt;
-      &lt;p&gt;...&lt;/p&gt;
-    &lt;/section&gt;
-    
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-
-            <h4>Light Sidebar:</h4>
-            <p>Light background Color & Dark text for light sidebar. See below image and code for more information.</p>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <p><a class="popup-img" href="assets/images/sidebar-light.jpg"><img class="img-fluid border"
-                      src="assets/images/sidebar-light.jpg" alt=""></a></p>
-              </div>
+            <div style="height: 40px;width: 100%;border:solid 1px #ccc;">
+              <p style="margin-left: 10px;"><code>Api-key</code> xxxx-xxxx-xxxx-xxxx</p>
             </div>
 
-            <p>Add the <code>.bg-light</code> class to the main sidebar navigation div element to display a light
-              sidebar.</p>
-            <pre><code>&lt;!-- Sidebar Navigation
-============================ --&gt;
-&lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
-  ....
-&lt;/div&gt;</code></pre>
+            <hr class="divider">
 
-            <h4>Dark Sidebar:</h4>
-            <p>Dark background Color & Light text for dark sidebar. See below image and code for more information.</p>
+            <h2>Game List</h2>
+            <p class="lead mb-5">
+              The game list is a collection of all available games in the system. Each game has a unique identifier and
+              can be used to retrieve specific game information or perform actions related to that game.<br>
+              Copy and paste your api-key into the perspective test box to make a request
+            </p>
 
-            <div class="row">
-              <div class="col-lg-6">
-                <p><a class="popup-img" href="assets/images/sidebar-dark.jpg"><img class="img-fluid border"
-                      src="assets/images/sidebar-dark.jpg" alt=""></a></p>
-              </div>
-            </div>
+            <hr class="divider">
 
-            <p>Add the <code>.bg-dark</code> and <code>.docs-navigation-dark</code> class to the main sidebar navigation
-              div element to display a dark sidebar.</p>
-            <pre><code>&lt;!-- Sidebar Navigation
-============================ --&gt;
-&lt;div class=&quot;idocs-navigation bg-dark docs-navigation-dark&quot;&gt;
-  ....
-&lt;/div&gt;</code></pre>
-          </section>
+            <h2>Draw List</h2>
+            <p class="lead mb-5">
+              The draw list is a collection of all available draws in the system. Each draw has a unique identifier and
+              can be used to retrieve specific draw information or perform actions related to that draw.<br>
+              Copy and paste your api-key into the perspective test box to make a request
+            </p>
 
-          <hr class="divider">
+            <hr class="divider">
 
-          <!-- Footer
-		============================ -->
-          <section id="idocs_footer">
-            <h2>Footer</h2>
-            <p>The list of various footer types & its descriptions are provided below for your reference:</p>
-            <h4>Light Footer</h4>
-            <p>Footer with white background Color & Dark text. See below code for more information.</p>
-            <pre><code class="html">&lt;!-- Footer
-============================================= --&gt;
-  &lt;footer id=&quot;footer&quot; class=&quot;section bg-light&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-    	..........
-    &lt;/div&gt;
-  &lt;/footer&gt;
-&lt;!-- Footer end --&gt;</code></pre>
-            <h4>Dark Footer</h4>
-            <p>Footer with dark background color & Light text. See below code for more information.</p>
-            <p>Add the <code>.bg-dark</code> and <code>.footer-text-light</code> Class to the <code>footer</code> Tag to
-              display a Dark footer.</p>
-            <pre><code class="html">&lt;!-- Footer
-============================================= --&gt;
-&lt;footer id=&quot;footer&quot; class=&quot;section bg-dark footer-text-light&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;
-    	..........
-    &lt;/div&gt;
-&lt;/footer&gt;
-&lt;!-- Footer end --&gt;</code></pre>
-          </section>
+            <h2>Draw Number Formatter</h2>
+            <p class="lead mb-5">
+              The draw number formatter is a utility that formats draw numbers into a standardized format for display or
+              processing.<br>
+              This ensures consistency in how draw numbers are presented across the system.<br>
+              Follow the rules below to format your draw numbers:
 
-          <hr class="divider">
+              <ul>
+                <li>5D Draw numbers should be formatted as a 5-digit number separated by comman Eg. x,x,x,x,x  0-9</li>
+                <li>3D Draw numbers should be formatted as a 3-digit number separated by comman Eg. x,x,x 0-9</li>
+                <li>FAST3 Draw numbers should be formatted as a 3-digit number separated by comman Eg. x,x,x 1-6</li>
+                <li>PK10 Draw numbers should be formatted as a 10-digit number separated by comman Eg. x,x,x,x,x,x,x,x,X,X 1-10</li>
+                <li>MARK6 Draw numbers should be formatted as a 7-digit number separated by comman Eg. x,x,x,x,x,x,x 0-49</li>
+                <li>HAPPY8 Draw numbers should be formatted as a 20-digit number separated by comman Eg. x,x,x,x,x,x,x,x,x,x</li>
+                <li>11X5 Draw numbers should be formatted as a 5-digit number separated by comman Eg. x,x,x,x,x with leading zeros</li>
+              </ul>        
 
-          <!-- Box Layout Style
-		============================ -->
-          <section id="idocs_box_layout">
-            <h2>Box Layout Style</h2>
-            <div>
-              <p>Default Layout Style is wide. Please add the <code>.box</code> class to the <code>&lt;body&gt;</code>
-                Tag for box layout.</p>
-              <pre><code class="html">&lt;body class="box" data-spy="scroll" data-target=".idocs-navigation" data-offset="125"&gt;</code></pre>
-            </div>
+            </p>
+
+
+            <hr class="divider">
+
+            <h2>Period Expiration Indicator</h2>
+            <p class="lead mb-5">
+              The period expiration indicator is a feature that indicates whether a draw period is still active or has
+              expired.<br>
+              This helps users and developers understand the current status of a draw period and take appropriate
+              actions.<br>
+              The indicator can be used to determine if a draw period is still open for submissions or if it has already
+              closed.
+            </p>
+
           </section>
 
           <hr class="divider">
@@ -607,10 +391,11 @@
   ============================ -->
     <footer id="footer" class="section footer-text-light" style="border-top: solid 2px #eee;">
       <div class="container text-dark">
-        
+
         <p class="text-center">
-          <img src="assets/images/logo.png" width="40px" height="40px"/><br>
-          <a href="http://www.1kball.com" target="_blank">1kball UI Lottery Game</a></p>
+          <img src="assets/images/logo.png" width="40px" height="40px" /><br>
+          <a href="http://www.1kball.com" target="_blank">1kball UI Lottery Game</a>
+        </p>
 
       </div>
     </footer>
